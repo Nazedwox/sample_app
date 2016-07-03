@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
+gem 'pg'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -35,12 +36,17 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'libnotify'
 end
 
 group :development do
@@ -57,7 +63,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
