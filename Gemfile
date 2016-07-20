@@ -49,6 +49,7 @@ group :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'libnotify'
+  gem 'factory_girl_rails'
 end
 
 group :development do
