@@ -50,6 +50,7 @@ group :test do
   gem 'database_cleaner'
   gem 'libnotify'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', '1.4.0', :require => false
 end
 
 group :development do
